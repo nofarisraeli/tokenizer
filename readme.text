@@ -1,0 +1,24 @@
+Tokenizer
+
+Steps to run:
+1. npm i
+2. npm start
+
+REST API:
+1. tokenize by default env url - GET /
+   http://localhost:3000/
+
+2.  tokenize by accepted url - GET /?url=https://www.gutenberg.org/cache/epub/10/pg10.txt
+    http://localhost:3000/?url=https://www.gutenberg.org/cache/epub/10/pg10.txt
+
+Steps to test:
+1. npm i
+2. npm test
+
+env variables:
+PORT - run the app on a different port
+TOKENIZER_NUM_OF_THREAD - num of worker-threads for text processing in the background (nodejs 12+)
+TOKENIZER_DEFAULT_URL - the default url to fetch text from (if no other url requested)
+
+
+
